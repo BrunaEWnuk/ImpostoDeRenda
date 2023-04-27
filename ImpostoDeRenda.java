@@ -115,7 +115,7 @@ public class ImpostoDeRenda {
         anualInss += inss;
 
         double baseIrpf = salario - inss;
-            if (baseIrpf < 1903.98) {
+            if (baseIrpf <= 1903.98) {
                 irpf = 0.0;
             } else if (baseIrpf <= 2826.65) {
                 irpf = baseIrpf * 0.075 - 142.80;

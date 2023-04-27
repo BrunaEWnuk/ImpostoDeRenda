@@ -106,8 +106,11 @@ public class ImpostoDeRenda {
         } else if (salario <= 7507.49) {
             inss = salario * 0.14 - 173.80;
         } else {
-            inss = 1049.6;
+            inss = 1501.50;
         }
+  /* O maior desconto é sobre o teto de R$ 7.507,49. 
+  Em 2023 esse valor pode chegar a R$ 1.501,50 para contribuintes com alíquota de 20%,  
+  mesmo a receita ou salário sendo superior a esse valor. - Contabilizei.blog*/
 
         anualInss += inss;
 
